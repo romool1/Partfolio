@@ -1,0 +1,23 @@
+.sidepanel {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 340px;
+    z-index: 1;
+    top: 25%;
+    margin-left: 50px;
+
+    .sidepanel__divider {
+        display: block;
+        width: 2px;
+        height: 70px;
+        background-color: #000;
+    }
+
+    .sidepanel__text {
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+    }
+}

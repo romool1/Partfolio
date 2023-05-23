@@ -1,0 +1,67 @@
+.title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 60px;
+}
+.title_fz12 {
+    font-size: 12px;
+    line-height: 18px;
+}
+.title_fz14 {
+    font-size: 14px;
+    line-height: 21px;
+}
+.title_fz16 {
+    font-size: 16px;
+    line-height: 24px;
+}
+.title_fz20 {
+    font-size: 20px;
+    line-height: 30px;
+}
+.title_fz36 {
+    font-size: 36px;
+}
+.title_fz48 {
+    font-size: 48px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.title__section-title {
+    text-align: center;
+    position: relative;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    @include circle;
+    &::before {
+        top: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.title__section-subtitle {
+    position: relative;
+    text-align: center;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 3px;
+        background-color: $main-color;
+        top: 82px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.titles__element-number {
+    font-weight: 500;
+}
